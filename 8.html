@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model & Layout Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.5;
+    }
+
+    .eventCard {
+      border: 2px solid #2a6f97;
+      padding: 16px;
+      margin: 16px 0;
+      background: #f0f8ff;
+      border-radius: 8px;
+    }
+
+    .eventCard h2 {
+      margin-top: 0;
+    }
+
+    .eventCard p {
+      margin: 8px 0;
+    }
+
+    .highlighted input:focus,
+    .highlighted select:focus,
+    .highlighted textarea:focus {
+      outline: 3px solid #ff9800;
+      outline-offset: 3px;
+    }
+
+    .compare-box {
+      border: 1px dashed #888;
+      padding: 12px;
+      margin: 12px 0;
+      background: #fafafa;
+    }
+
+    .hidden-example {
+      visibility: hidden;
+      border: 1px solid #f00;
+      padding: 8px;
+      margin-top: 8px;
+    }
+
+    .none-example {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Model & Layout Control</h1>
+
+  <div class="eventCard">
+    <h2>Event Card</h2>
+    <p>Use margin to add space outside the card, padding to create room inside, and a border for a clear outline.</p>
+    <p>Try changing these values in developer tools to see how the layout changes.</p>
+  </div>
+
+  <div class="highlighted">
+    <form>
+      <fieldset>
+        <legend>Contact Form</legend>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="compare-box">
+    <h2>Visibility Comparison</h2>
+    <p><strong>visibility: hidden</strong> keeps the element in the layout but hides it.</p>
+    <div class="hidden-example">This box is hidden but still takes space.</div>
+    <p><strong>display: none</strong> removes the element completely from the layout.</p>
+    <div class="none-example">This box is not shown and frees up space.</div>
+    <p>Open developer tools to toggle these styles and compare the spacing behavior.</p>
+  </div>
+</body>
+</html>

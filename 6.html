@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link and List Styling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    nav ul {
+      list-style-type: none;
+      list-style-position: inside;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    nav li {
+      margin: 0.5rem 0;
+      padding: 0.25rem 0;
+    }
+
+    nav a:link {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    nav a:visited {
+      color: #5e35b1;
+    }
+
+    nav a:hover {
+      color: #0b51b0;
+      text-decoration: underline;
+    }
+
+    nav a:active {
+      color: #d32f2f;
+    }
+
+    section ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    section li {
+      margin: 0.5rem 0;
+      padding: 0.25rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Link and List Styling</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Custom link colors for :link, :visited, :hover, and :active states.</li>
+      <li>Navigation menu without default bullets.</li>
+      <li>Spacing added with margin and padding for list items.</li>
+    </ul>
+    <p>Learn more by visiting the <a href="https://example.com">example site</a>.</p>
+  </section>
+</body>
+</html>
